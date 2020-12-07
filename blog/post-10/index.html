@@ -166,7 +166,7 @@
 <p>Selenium是用來處理<strong>需使用者登入</strong>才能進入頁面的動態爬蟲工具。</p>
 </blockquote>
 <p>如上所述，可以大概知道Selenium跟赫赫有名的網頁爬蟲工具-Beautiful Soup最大的不同</p>
-<p>就是Selenium專門用來爬需要<strong>帳密認證</strong>才能看網頁內容的網站(如:Facebook、Prtg)</p>
+<p>就是Selenium專門用來爬需要<strong>帳密認證(而且不能用POST或GET傳值)</strong>才能看網頁內容的網站(如:Facebook、Prtg)</p>
 <p>那不用登入的網站可不可以用Selenium爬? 當然可以! 看你的目的是甚麼</p>
 <p>像搶票機器人就是用Selenium模擬人在瘋狂點擊和輸入資料的畫面</p>
 <p>一般來說Selenium的速度會比Beautiful Soup慢 但還是遠比人手動輸入還快很多。</p>
@@ -207,14 +207,17 @@ ERROR: No matching distribution found for selenium
 <p><img src="https://lala870617.github.io/images/6.png" alt="image"></p>
 <p>選.tar.gz檔案，就會開始下載</p>
 <p><img src="https://lala870617.github.io/images/7.png" alt="image"></p>
-<p>將.tar.gz檔案解壓縮2次!!最後把沒有附檔名的資料夾，放到和python同路徑的目錄下</p>
+<p>將.tar.gz檔案解壓縮2次!!最後把<strong>沒有附檔名</strong>的資料夾，放到和python同路徑的目錄下</p>
 <p><img src="https://lala870617.github.io/images/8.png" alt="image"></p>
 <p>點進去selenium-3.141.0資料夾，確認是否有setup.py</p>
 <p><img src="https://lala870617.github.io/images/9.png" alt="image"></p>
 <p>在這個目錄下搜尋cmd，之後在cmd介面輸入<code>python setup.py</code></p>
 <p><img src="https://lala870617.github.io/images/10.png" alt="image"></p>
+<p>安裝完後，在cmd輸入<code>pip list</code>看到出現selenium，就是安裝成功了!</p>
+<p><img src="https://lala870617.github.io/images/11.png" alt="image"></p>
 </ol>
-
+<li>下載 Web Driver</li>
+</ol>
 <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
 <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
 <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
