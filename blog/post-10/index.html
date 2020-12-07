@@ -191,11 +191,19 @@
 <p>在cmd輸入 <code>pip install selenium</code></p>
 <p><img src="https://lala870617.github.io/images/3.png" alt="image"></p>
 <p>如果是用公司網路安裝的話，會出現以下錯誤訊息:</p>
-<code><pre>ERROR: Could not find a version that satisfies the requirement selenium (from versions: none)
+<code><pre>
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after 
+connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED]
+certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)'))': /simple/mammoth/
+ERROR: Could not find a version that satisfies the requirement selenium (from versions: none)
 ERROR: No matching distribution found for selenium
 </code></pre>
 <p><img src="https://lala870617.github.io/images/4.png" alt="image"></p>
-
+<p>這是因為公用網路被限制，無法直接連上package網址下載，有兩種解法:</p>
+<ol>
+<li><del>拔掉公司網路線，連自己手機網路安裝</del></li>
+<li>List item</li>
+</ol>
 <li>WebDriver</li>
 </ol>
 
