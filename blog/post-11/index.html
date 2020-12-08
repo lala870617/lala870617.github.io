@@ -161,14 +161,14 @@
 </blockquote>
 <p>切記Web Driver一定要和selenium和python放在同一個執行目錄底下，不然程式執行會找不到喔!</p>
 <p>以下是有正確放在同一目錄執行的程式碼:</p>
-<code><pre></div><pre><code>
+<code><pre></div>
 1 from selenium import webdriver #叫出同一目錄的selenium和web driver
 
 2 driver = webdriver.Chrome() #指定此web driver是chrome版本的
 3 driver.get("https://www.google.com/?hl=zh_tw") #前往這個網址
 4 driver.close() #關閉視窗
 </code></pre>
-<p>執行到第二行</p>
+<p>執行到第二行的時候，web driver會另外開啟一個瀏覽器視窗，視窗上會出現</p>
 
 
 
