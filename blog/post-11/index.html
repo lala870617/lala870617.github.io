@@ -140,26 +140,34 @@
       <div class="col-lg-8 mx-auto">
         
         <a href="/categories/go-language"
-          class="text-primary">Go language</a>
+          class="text-primary">Python</a>
         
-        <h2>How To Use Checklists To Improve Your UX</h2>
+        <h2>[Python]動態網路爬蟲Selenium教學(2)-基本操作</h2>
         <div class="mb-3 post-meta">
-          <span>By Themefisher</span>
+          <span>By Lala</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>29 October 2019</span>
+          <span>8 December 2020</span>
           
         </div>
         
         <img src="https://lala870617.github.io/images/post/post-2.jpg" class="img-fluid w-100 mb-4" alt="How To Use Checklists To Improve Your UX">
         
         <div class="content mb-5">
-          <h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<h4 id="heading-4">Heading 4</h4>
-<h5 id="heading-5">Heading 5</h5>
-<h6 id="heading-6">Heading 6</h6>
+<h5 id="emphasis">用Web Driver開啟網頁</h5>
+<blockquote>
+<p>上一篇有說過，不同瀏覽器會有不同的Web Driver，本篇以Chrome作範例</p>
+<p>用其他瀏覽器的請左轉別的教學喔 ><</p>
+</blockquote>
+<p>切記Web Driver一定要和selenium和python放在同一個執行目錄底下，不然程式執行會找不到喔!</p>
+<p>以下是有正確放在同一目錄執行的程式碼:</p>
+<code><pre>
+from selenium import webdriver #叫出同一目錄的selenium和web driver
+
+driver = webdriver.Chrome() #指定此web driver是chrome版本的
+driver.get("https://www.google.com/?hl=zh_tw") #前往這個網址
+driver.close() #關閉視窗
+</code></pre>
 <!-- raw HTML omitted -->
 <h5 id="emphasis">Emphasis</h5>
 <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
