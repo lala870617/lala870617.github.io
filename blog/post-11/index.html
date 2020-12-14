@@ -161,7 +161,7 @@
 </blockquote>
 <p>切記Web Driver一定要和selenium和python放在同一個執行目錄底下，不然程式執行會找不到喔!</p>
 <p>以下是有正確放在同一目錄執行的程式碼:</p>
-<code><pre>
+<pre>
 <strong>from selenium import webdriver</strong> #叫出同一目錄的selenium和web driver
 
 <strong>driver = webdriver.Chrome()</strong> #指定此web driver是chrome版本的
@@ -169,13 +169,15 @@
 <strong>driver.get("https://www.google.com/?hl=zh_tw")</strong> #前往這個網址
 
 <strong>driver.close()</strong> #關閉視窗
-</code></pre>
+</pre>
 <p>執行到第二行的時候，web driver會另外開啟一個瀏覽器視窗，視窗上會出現</p>
 <p>「Chrome 目前受到測試軟體控制」，表示web driver已經透過程式控制瀏覽器囉!</p>
 <p><img src="https://lala870617.github.io/images/13.png" alt="image"></p>
 <p>在第三行，使用<strong>driver.get()</strong>讓web driver打開google頁面</p>
 <p><img src="https://lala870617.github.io/images/14.png" alt="image"></p>
 <p>最後一行，使用<strong>driver.close()</strong>關閉整個瀏覽器視窗，到這裡就學會自動開啟網頁的部分了!</p>
+<h5 id="emphasis">Selenium定位元素</h5>
+
 
 
 <!-- raw HTML omitted -->
